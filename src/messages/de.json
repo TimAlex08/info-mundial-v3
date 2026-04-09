@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "partidos_y_sedes": "Spiele und Spielstätten",
+    "calendario_partidos": "Spielkalender",
+    "horarios_partidos": "Spielzeiten",
+    "resultados": "Ergebnisse",
+    "sedes": "Spielstätten",
+    "explora_monterrey": "Monterrey entdecken",
+    "barrio_antiguo": "Barrio Antiguo",
+    "tours": "Touren",
+    "lugares": "Orte",
+    "fifa_fan": "FIFA Fan",
+    "eventos": "Veranstaltungen",
+    "transporte_y_movilidad": "Transport und Mobilität",
+    "transporte": "Transport",
+    "estadio_monterrey": "Estadio Monterrey",
+    "mapa_de_zonas": "Zonenkarte",
+    "hospedaje_y_zonas": "Unterkunft und Zonen",
+    "comida": "Essen",
+    "bares": "Bars",
+    "plataformas": "Plattformen",
+    "zonas_recomendadas": "Empfohlene Zonen",
+    "cultura_y_experiencias": "Kultur und Erlebnisse",
+    "museos": "Museen",
+    "eventos_cultura": "Kulturveranstaltungen",
+    "comunidad": "Gemeinschaft",
+    "historias": "Geschichten",
+    "anfitriones_regios": "Lokale Gastgeber",
+    "pancho_mundial": "Pancho Mundial",
+    "mundialito_barrios": "Mundialito Barrios",
+    "noticias": "Nachrichten",
+    "eventos_noticias": "Veranstaltungen",
+    "infraestructura": "Infrastruktur",
+    "prensa": "Presse",
+    "faq": "FAQ",
+    "contacto": "Kontakt",
+    "hospedaje": "Unterkunft",
+    "cultura": "Kultur"
+  },
+  "layout": {
+    "close": "Schließen",
+    "close_menu": "Menü schließen",
+    "close_search": "Suche schließen",
+    "open_menu": "Menü öffnen",
+    "search": "Suchen",
+    "search_placeholder": "Suchen...",
+    "see_all": "Alle anzeigen",
+    "slogan": "DIE WM IST IN MTY",
+    "follow_social": "Folgen Sie unseren offiziellen Kanälen",
+    "follow_us": "Folgen Sie uns",
+    "latest_news": "Neueste Nachrichten",
+    "news": "Nachrichten",
+    "nav_menu": "Navigationsmenü",
+    "back_to_top": "Nach oben",
+    "learn_more": "Mehr erfahren",
+    "copyright": "Alle Rechte vorbehalten",
+    "read_more": "Weiterlesen"
+  },
+  "general": {
+    "social_media": {
+      "text": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "tiktok": "TikTok",
+        "snapchat": "Snapchat",
+        "pinterest": "Pinterest",
+        "tumblr": "Tumblr",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "reddit": "Reddit",
+        "telegram": "Telegram"
+      }
+    },
+    "breadcrumbs": {
+      "home": "Startseite"
+    },
+    "burger_menu": "Menü öffnen",
+    "pagination": {
+      "label": "Seitennummerierung",
+      "page": "Seite {number}",
+      "next": "Nächste Seite",
+      "previous": "Vorherige Seite",
+      "load_more": "Mehr laden"
+    },
+    "slider": {
+      "of": "von",
+      "next_slide": "Nächste Folie",
+      "previous_slide": "Vorherige Folie"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "Die angeforderte Seite existiert nicht",
+      "return_home": "Zurück zur Startseite"
+    },
+    "search": {
+      "no_results": "Keine Ergebnisse für \"{terms}\" gefunden.",
+      "search_title": "Suchen",
+      "placeholder": "Suchen",
+      "clear": "Löschen",
+      "articles": "Blogbeiträge",
+      "pages": "Seiten",
+      "results_count": "{count, plural, one {# Ergebnis} other {# Ergebnisse}}"
+    }
+  },
+  "sections": {
+    "featured_blog": {
+      "onboarding_content": "Erstellen Sie Ihren ersten Beitrag oder wählen Sie einen Blog mit Beiträgen."
+    },
+    "video": {
+      "load_video": "Video laden: {description}"
+    },
+    "slideshow": {
+      "pause_slideshow": "Diashow pausieren",
+      "play_slideshow": "Diashow abspielen"
+    },
+    "countdown_timer": {
+      "days": "Tag",
+      "hours": "Std",
+      "minutes": "Min",
+      "seconds": "Sek",
+      "days_short": "T",
+      "hours_short": "S",
+      "minutes_short": "M",
+      "seconds_short": "S"
+    }
+  },
+  "accessibility": {
+    "close": "Schließen",
+    "new_window": "Öffnet in einem neuen Fenster.",
+    "loading": "Wird geladen...",
+    "pause": "Pause",
+    "play": "Abspielen",
+    "mute": "Stumm",
+    "unmute": "Ton aktivieren"
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "Alle",
+      "tags": "Schlagwörter",
+      "back_to_blog": "Zum Blog",
+      "previous_post": "Vorheriger Beitrag",
+      "next_post": "Nächster Beitrag"
+    }
+  }
+}

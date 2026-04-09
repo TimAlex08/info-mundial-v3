@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "partidos_y_sedes": "Partidos y Sedes",
+    "calendario_partidos": "Calendario de Partidos",
+    "horarios_partidos": "Horarios de Partidos",
+    "resultados": "Resultados",
+    "sedes": "Sedes",
+    "explora_monterrey": "Explora Monterrey",
+    "barrio_antiguo": "Barrio Antiguo",
+    "tours": "Tours",
+    "lugares": "Lugares",
+    "fifa_fan": "FIFA Fan",
+    "eventos": "Eventos",
+    "transporte_y_movilidad": "Transporte y Movilidad",
+    "transporte": "Transporte",
+    "estadio_monterrey": "Estadio Monterrey",
+    "mapa_de_zonas": "Mapa de Zonas",
+    "hospedaje_y_zonas": "Hospedaje y Zonas",
+    "comida": "Comida",
+    "bares": "Bares",
+    "plataformas": "Plataformas",
+    "zonas_recomendadas": "Zonas Recomendadas",
+    "cultura_y_experiencias": "Cultura y Experiencias",
+    "museos": "Museos",
+    "eventos_cultura": "Eventos Cultura",
+    "comunidad": "Comunidad",
+    "historias": "Historias",
+    "anfitriones_regios": "Anfitriones Regios",
+    "pancho_mundial": "Pancho Mundial",
+    "mundialito_barrios": "Mundialito Barrios",
+    "noticias": "Noticias",
+    "eventos_noticias": "Eventos",
+    "infraestructura": "Infraestructura",
+    "prensa": "Prensa",
+    "faq": "FAQ",
+    "contacto": "Contacto",
+    "hospedaje": "Hospedaje",
+    "cultura": "Cultura"
+  },
+  "layout": {
+    "close": "Cerrar",
+    "close_menu": "Cerrar menú",
+    "close_search": "Cerrar búsqueda",
+    "open_menu": "Abrir menú",
+    "search": "Buscar",
+    "search_placeholder": "Buscar...",
+    "see_all": "Ver todo",
+    "slogan": "EL MUNDIAL ES EN MTY",
+    "follow_social": "Sigue nuestras redes oficiales",
+    "follow_us": "Síguenos",
+    "latest_news": "Últimas noticias",
+    "news": "Noticias",
+    "nav_menu": "Menú de navegación",
+    "back_to_top": "Regresar arriba",
+    "learn_more": "Conoce más",
+    "copyright": "Todos los derechos reservados",
+    "read_more": "Leer más"
+  },
+  "general": {
+    "social_media": {
+      "text": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "tiktok": "TikTok",
+        "snapchat": "Snapchat",
+        "pinterest": "Pinterest",
+        "tumblr": "Tumblr",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "reddit": "Reddit",
+        "telegram": "Telegram"
+      }
+    },
+    "breadcrumbs": {
+      "home": "Inicio"
+    },
+    "burger_menu": "Abrir el menú de hamburguesa",
+    "pagination": {
+      "label": "Paginación",
+      "page": "Página {number}",
+      "next": "Página siguiente",
+      "previous": "Página anterior",
+      "load_more": "Cargar más"
+    },
+    "slider": {
+      "of": "de",
+      "next_slide": "Diapositiva siguiente",
+      "previous_slide": "Diapositiva anterior"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "La página que has solicitado no existe",
+      "return_home": "Volver a la página de inicio"
+    },
+    "search": {
+      "no_results": "No se han encontrado resultados para \"{terms}\".",
+      "search_title": "Buscar",
+      "placeholder": "Buscar",
+      "clear": "Borrar",
+      "articles": "Publicaciones de blog",
+      "pages": "Páginas",
+      "results_count": "{count, plural, one {# resultado} other {# resultados}}"
+    }
+  },
+  "sections": {
+    "featured_blog": {
+      "onboarding_content": "Crea tu primera publicación o selecciona un blog con publicaciones."
+    },
+    "video": {
+      "load_video": "Cargar vídeo: {description}"
+    },
+    "slideshow": {
+      "pause_slideshow": "Pausar presentación",
+      "play_slideshow": "Reproducir presentación"
+    },
+    "countdown_timer": {
+      "days": "Día",
+      "hours": "Hr",
+      "minutes": "Min",
+      "seconds": "S",
+      "days_short": "D",
+      "hours_short": "H",
+      "minutes_short": "M",
+      "seconds_short": "S"
+    }
+  },
+  "accessibility": {
+    "close": "Cerrar",
+    "new_window": "Se abre en una nueva ventana.",
+    "loading": "Cargando...",
+    "pause": "Pausa",
+    "play": "Reproducir",
+    "mute": "Silencio",
+    "unmute": "Activar sonido"
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "Todos",
+      "tags": "Etiquetas",
+      "back_to_blog": "Ir al blog",
+      "previous_post": "Publicación anterior",
+      "next_post": "Siguiente publicación"
+    }
+  }
+}

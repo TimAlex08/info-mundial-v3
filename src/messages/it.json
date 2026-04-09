@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "partidos_y_sedes": "Partite e sedi",
+    "calendario_partidos": "Calendario partite",
+    "horarios_partidos": "Orari delle partite",
+    "resultados": "Risultati",
+    "sedes": "Sedi",
+    "explora_monterrey": "Esplora Monterrey",
+    "barrio_antiguo": "Barrio Antiguo",
+    "tours": "Tour",
+    "lugares": "Luoghi",
+    "fifa_fan": "FIFA Fan",
+    "eventos": "Eventi",
+    "transporte_y_movilidad": "Trasporti e mobilità",
+    "transporte": "Trasporti",
+    "estadio_monterrey": "Estadio Monterrey",
+    "mapa_de_zonas": "Mappa delle zone",
+    "hospedaje_y_zonas": "Alloggio e zone",
+    "comida": "Gastronomia",
+    "bares": "Bar",
+    "plataformas": "Piattaforme",
+    "zonas_recomendadas": "Zone consigliate",
+    "cultura_y_experiencias": "Cultura ed esperienze",
+    "museos": "Musei",
+    "eventos_cultura": "Eventi culturali",
+    "comunidad": "Comunità",
+    "historias": "Storie",
+    "anfitriones_regios": "Host locali",
+    "pancho_mundial": "Pancho Mundial",
+    "mundialito_barrios": "Mundialito Barrios",
+    "noticias": "Notizie",
+    "eventos_noticias": "Eventi",
+    "infraestructura": "Infrastruttura",
+    "prensa": "Stampa",
+    "faq": "FAQ",
+    "contacto": "Contatto",
+    "hospedaje": "Alloggio",
+    "cultura": "Cultura"
+  },
+  "layout": {
+    "close": "Chiudi",
+    "close_menu": "Chiudi menu",
+    "close_search": "Chiudi ricerca",
+    "open_menu": "Apri menu",
+    "search": "Cerca",
+    "search_placeholder": "Cerca...",
+    "see_all": "Vedi tutto",
+    "slogan": "IL MONDIALE È A MTY",
+    "follow_social": "Segui i nostri canali ufficiali",
+    "follow_us": "Seguici",
+    "latest_news": "Ultime notizie",
+    "news": "Notizie",
+    "nav_menu": "Menu di navigazione",
+    "back_to_top": "Torna su",
+    "learn_more": "Scopri di più",
+    "copyright": "Tutti i diritti riservati",
+    "read_more": "Leggi di più"
+  },
+  "general": {
+    "social_media": {
+      "text": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "tiktok": "TikTok",
+        "snapchat": "Snapchat",
+        "pinterest": "Pinterest",
+        "tumblr": "Tumblr",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "reddit": "Reddit",
+        "telegram": "Telegram"
+      }
+    },
+    "breadcrumbs": {
+      "home": "Home"
+    },
+    "burger_menu": "Apri il menu",
+    "pagination": {
+      "label": "Paginazione",
+      "page": "Pagina {number}",
+      "next": "Pagina successiva",
+      "previous": "Pagina precedente",
+      "load_more": "Carica di più"
+    },
+    "slider": {
+      "of": "di",
+      "next_slide": "Diapositiva successiva",
+      "previous_slide": "Diapositiva precedente"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Pagina non trovata",
+      "subtext": "La pagina richiesta non esiste",
+      "return_home": "Torna alla home"
+    },
+    "search": {
+      "no_results": "Nessun risultato trovato per \"{terms}\".",
+      "search_title": "Cerca",
+      "placeholder": "Cerca",
+      "clear": "Cancella",
+      "articles": "Articoli del blog",
+      "pages": "Pagine",
+      "results_count": "{count, plural, one {# risultato} other {# risultati}}"
+    }
+  },
+  "sections": {
+    "featured_blog": {
+      "onboarding_content": "Crea il tuo primo articolo o seleziona un blog con articoli."
+    },
+    "video": {
+      "load_video": "Carica video: {description}"
+    },
+    "slideshow": {
+      "pause_slideshow": "Metti in pausa la presentazione",
+      "play_slideshow": "Avvia la presentazione"
+    },
+    "countdown_timer": {
+      "days": "Giorno",
+      "hours": "Ore",
+      "minutes": "Min",
+      "seconds": "Sec",
+      "days_short": "G",
+      "hours_short": "O",
+      "minutes_short": "M",
+      "seconds_short": "S"
+    }
+  },
+  "accessibility": {
+    "close": "Chiudi",
+    "new_window": "Si apre in una nuova finestra.",
+    "loading": "Caricamento...",
+    "pause": "Pausa",
+    "play": "Riproduci",
+    "mute": "Muto",
+    "unmute": "Attiva audio"
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "Tutti",
+      "tags": "Tag",
+      "back_to_blog": "Vai al blog",
+      "previous_post": "Articolo precedente",
+      "next_post": "Articolo successivo"
+    }
+  }
+}

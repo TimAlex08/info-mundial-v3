@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "partidos_y_sedes": "Matches & Venues",
+    "calendario_partidos": "Match Calendar",
+    "horarios_partidos": "Match Schedule",
+    "resultados": "Results",
+    "sedes": "Venues",
+    "explora_monterrey": "Explore Monterrey",
+    "barrio_antiguo": "Barrio Antiguo",
+    "tours": "Tours",
+    "lugares": "Places",
+    "fifa_fan": "FIFA Fan",
+    "eventos": "Events",
+    "transporte_y_movilidad": "Transport & Mobility",
+    "transporte": "Transport",
+    "estadio_monterrey": "Estadio Monterrey",
+    "mapa_de_zonas": "Zone Map",
+    "hospedaje_y_zonas": "Lodging & Zones",
+    "comida": "Food",
+    "bares": "Bars",
+    "plataformas": "Platforms",
+    "zonas_recomendadas": "Recommended Zones",
+    "cultura_y_experiencias": "Culture & Experiences",
+    "museos": "Museums",
+    "eventos_cultura": "Cultural Events",
+    "comunidad": "Community",
+    "historias": "Stories",
+    "anfitriones_regios": "Local Hosts",
+    "pancho_mundial": "Pancho Mundial",
+    "mundialito_barrios": "Mundialito Barrios",
+    "noticias": "News",
+    "eventos_noticias": "Events",
+    "infraestructura": "Infrastructure",
+    "prensa": "Press",
+    "faq": "FAQ",
+    "contacto": "Contact",
+    "hospedaje": "Lodging",
+    "cultura": "Culture"
+  },
+  "layout": {
+    "close": "Close",
+    "close_menu": "Close menu",
+    "close_search": "Close search",
+    "open_menu": "Open menu",
+    "search": "Search",
+    "search_placeholder": "Search...",
+    "see_all": "See all",
+    "slogan": "THE WORLD CUP IS IN MTY",
+    "follow_social": "Follow our official channels",
+    "follow_us": "Follow us",
+    "latest_news": "Latest news",
+    "news": "News",
+    "nav_menu": "Navigation menu",
+    "back_to_top": "Back to top",
+    "learn_more": "Learn more",
+    "copyright": "All rights reserved",
+    "read_more": "Read more"
+  },
+  "general": {
+    "social_media": {
+      "text": {
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "tiktok": "TikTok",
+        "snapchat": "Snapchat",
+        "pinterest": "Pinterest",
+        "tumblr": "Tumblr",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube",
+        "vimeo": "Vimeo",
+        "reddit": "Reddit",
+        "telegram": "Telegram"
+      }
+    },
+    "breadcrumbs": {
+      "home": "Home"
+    },
+    "burger_menu": "Open burger menu",
+    "pagination": {
+      "label": "Pagination",
+      "page": "Page {number}",
+      "next": "Next page",
+      "previous": "Previous page",
+      "load_more": "Load more"
+    },
+    "slider": {
+      "of": "of",
+      "next_slide": "Next slide",
+      "previous_slide": "Previous slide"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "The page you requested does not exist",
+      "return_home": "Return home"
+    },
+    "search": {
+      "no_results": "No results found for \"{terms}\".",
+      "search_title": "Search",
+      "placeholder": "Search",
+      "clear": "Clear",
+      "articles": "Blog posts",
+      "pages": "Pages",
+      "results_count": "{count, plural, one {# result} other {# results}}"
+    }
+  },
+  "sections": {
+    "featured_blog": {
+      "onboarding_content": "Create your first post or select a blog with posts."
+    },
+    "video": {
+      "load_video": "Load video: {description}"
+    },
+    "slideshow": {
+      "pause_slideshow": "Pause slideshow",
+      "play_slideshow": "Play slideshow"
+    },
+    "countdown_timer": {
+      "days": "Day",
+      "hours": "Hr",
+      "minutes": "Min",
+      "seconds": "Sec",
+      "days_short": "D",
+      "hours_short": "H",
+      "minutes_short": "M",
+      "seconds_short": "S"
+    }
+  },
+  "accessibility": {
+    "close": "Close",
+    "new_window": "Opens in a new window.",
+    "loading": "Loading...",
+    "pause": "Pause",
+    "play": "Play",
+    "mute": "Mute",
+    "unmute": "Unmute"
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "All",
+      "tags": "Tags",
+      "back_to_blog": "Go to blog",
+      "previous_post": "Previous post",
+      "next_post": "Next post"
+    }
+  }
+}

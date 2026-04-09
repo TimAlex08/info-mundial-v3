@@ -4,12 +4,67 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ============================================
+   Design Tokens — Avante Theme (Shopify)
+   Extracted from: shopify_files/config/settings_data.json
+   ============================================ */
+
 @theme inline {
+  /* --- shadcn/ui color tokens --- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* --- Brand colors (Monterrey FIFA 2026) --- */
+  --color-brand-red: #db0138;
+  --color-brand-blue-dark: #1f3359;
+  --color-brand-blue: #2e4785;
+  --color-brand-blue-light: #82bbe8;
+
+  /* --- Theme semantic colors --- */
+  --color-hover: #db0138;
+  --color-error: #db0138;
+  --color-success: #82bbe8;
+  --color-rating: #5BA614;
+  --color-sale: #ffffff;
+  --color-sold: #1f3359;
+
+  /* --- Fonts --- */
+  --font-sans: var(--font-base);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-accent);
+
+  /* --- Breakpoints (Avante: 920px = md) --- */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 920px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1400px;
+
+  /* --- Border radius --- */
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* --- Sidebar (shadcn) --- */
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -18,103 +73,250 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
+
+  /* --- Charts (shadcn) --- */
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* === Layout === */
+  --page-width: 1400px;
+  --layout-background-color: #ffffff;
+  --layout-text-color: #1f3359;
+
+  /* === Colors === */
+  --base-button-color: #ffffff;
+  --accent-button-color: #2e4785;
+  --hover-button-color: #db0138;
+  --popup-background-color: #82bbe8;
+
+  /* === Border & Radius === */
+  --border-thickness: 1px;
+  --button-radius: 12px;
+  --field-radius: 12px;
+  --other-buttons-radius: 12px;
+  --images-and-sections-radius: 12px;
+  --product-card-radius: 12px;
+  --radius: 12px;
+
+  /* === Lines === */
+  --line-width: 1px;
+  --line-opacity: 0.2;
+
+  /* === Animation === */
+  --animation-duration: 0.5s;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* === Typography — Font Families === */
+  --font-base: "Montserrat", sans-serif;
+  --font-accent: "Montserrat", sans-serif;
+  --base-font-family: "Montserrat", sans-serif;
+  --base-font-style: normal;
+  --base-font-weight: 400;
+  --accent-font-family: "Montserrat", sans-serif;
+  --accent-font-style: normal;
+  --accent-font-weight: 700;
+
+  /* === Typography — Custom Preset Sizes === */
+  --heading-xl-font-size: 136px;
+  --heading-xl-line-height: 1;
+  --heading-xl-letter-spacing: -0.03em;
+  --heading-l-font-size: 80px;
+  --heading-l-line-height: 1;
+  --heading-l-letter-spacing: -0.02em;
+  --heading-m-font-size: 52px;
+  --heading-m-line-height: 1.2;
+  --heading-m-letter-spacing: -0.01em;
+  --heading-s-font-size: 32px;
+  --heading-s-line-height: 1.2;
+  --heading-s-letter-spacing: 0em;
+  --heading-xs-font-size: 18px;
+  --heading-xs-line-height: 1.5;
+  --heading-xs-letter-spacing: 0em;
+  --body-l-font-size: 18px;
+  --body-l-line-height: 1.5;
+  --body-l-letter-spacing: 0.02em;
+  --body-m-font-size: 16px;
+  --body-m-line-height: 1.5;
+  --body-m-letter-spacing: 0.02em;
+  --body-s-font-size: 14px;
+  --body-s-line-height: 1.5;
+  --body-s-letter-spacing: 0.02em;
+  --label-font-size: 14px;
+  --label-line-height: 1.2;
+  --label-letter-spacing: 0.02em;
+
+  /* === Typography — Font Shorthands (custom preset) === */
+  /* Headings use accent font (Montserrat 700) */
+  --heading-xl-font: normal 700 var(--heading-xl-font-size)/var(--heading-xl-line-height) var(--accent-font-family);
+  --heading-l-font: normal 700 var(--heading-l-font-size)/var(--heading-l-line-height) var(--accent-font-family);
+  --heading-m-font: normal 700 var(--heading-m-font-size)/var(--heading-m-line-height) var(--accent-font-family);
+  --heading-s-font: normal 700 var(--heading-s-font-size)/var(--heading-s-line-height) var(--accent-font-family);
+  --heading-xs-font: normal 700 var(--heading-xs-font-size)/var(--heading-xs-line-height) var(--accent-font-family);
+  /* Body L and Label use accent font (Montserrat 700) */
+  --body-l-font: normal 700 var(--body-l-font-size)/var(--body-l-line-height) var(--accent-font-family);
+  --label-font: normal 700 var(--label-font-size)/var(--label-line-height) var(--accent-font-family);
+  /* Body M and S use base font (Montserrat 400) */
+  --body-m-font: normal 400 var(--body-m-font-size)/var(--body-m-line-height) var(--base-font-family);
+  --body-s-font: normal 400 var(--body-s-font-size)/var(--body-s-line-height) var(--base-font-family);
+
+  /* === shadcn/ui base tokens === */
+  --background: #ffffff;
+  --foreground: #1f3359;
+  --card: #ffffff;
+  --card-foreground: #1f3359;
+  --popover: #ffffff;
+  --popover-foreground: #1f3359;
+  --primary: #2e4785;
+  --primary-foreground: #ffffff;
+  --secondary: #82bbe8;
+  --secondary-foreground: #1f3359;
+  --muted: #f5f5f5;
+  --muted-foreground: #64748b;
+  --accent: #2e4785;
+  --accent-foreground: #ffffff;
+  --destructive: #db0138;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #2e4785;
+  --chart-1: #db0138;
+  --chart-2: #2e4785;
+  --chart-3: #82bbe8;
+  --chart-4: #1f3359;
+  --chart-5: #5BA614;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1f3359;
+  --sidebar-primary: #2e4785;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f5f5f5;
+  --sidebar-accent-foreground: #1f3359;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #2e4785;
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+/* === Mobile typography overrides (≤920px) === */
+@media screen and (max-width: 920px) {
+  :root {
+    --heading-xl-font-size: 36px;
+    --heading-l-font-size: 28px;
+    --heading-m-font-size: 22px;
+    --heading-s-font-size: 22px;
+    --heading-xs-font-size: 16px;
+    --body-l-font-size: 16px;
+    --body-m-font-size: 14px;
+    --body-s-font-size: 12px;
+    --label-font-size: 12px;
+  }
+}
+
+/* === Desktop responsive scaling (≤1440px) === */
+@media screen and (max-width: 1440px) {
+  :root {
+    --heading-xl-font-size: 88px;
+    --heading-l-font-size: 52px;
+    --heading-m-font-size: 34px;
+  }
+}
+
+/* === Typography utility classes === */
+.heading_xl {
+  font: var(--heading-xl-font);
+  letter-spacing: var(--heading-xl-letter-spacing);
+}
+.heading_xl_uppercase {
+  font: var(--heading-xl-font);
+  letter-spacing: var(--heading-xl-letter-spacing);
+  text-transform: uppercase;
+}
+.heading_l {
+  font: var(--heading-l-font);
+  letter-spacing: var(--heading-l-letter-spacing);
+}
+.heading_l_uppercase {
+  font: var(--heading-l-font);
+  letter-spacing: var(--heading-l-letter-spacing);
+  text-transform: uppercase;
+}
+.heading_m {
+  font: var(--heading-m-font);
+  letter-spacing: var(--heading-m-letter-spacing);
+}
+.heading_m_uppercase {
+  font: var(--heading-m-font);
+  letter-spacing: var(--heading-m-letter-spacing);
+  text-transform: uppercase;
+}
+.heading_s {
+  font: var(--heading-s-font);
+  letter-spacing: var(--heading-s-letter-spacing);
+}
+.heading_s_uppercase {
+  font: var(--heading-s-font);
+  letter-spacing: var(--heading-s-letter-spacing);
+  text-transform: uppercase;
+}
+.heading_xs {
+  font: var(--heading-xs-font);
+  letter-spacing: var(--heading-xs-letter-spacing);
+}
+.heading_xs_uppercase {
+  font: var(--heading-xs-font);
+  letter-spacing: var(--heading-xs-letter-spacing);
+  text-transform: uppercase;
+}
+.body_l {
+  font: var(--body-l-font);
+  letter-spacing: var(--body-l-letter-spacing);
+}
+.body_l_uppercase {
+  font: var(--body-l-font);
+  letter-spacing: var(--body-l-letter-spacing);
+  text-transform: uppercase;
+}
+.body_m {
+  font: var(--body-m-font);
+  letter-spacing: var(--body-m-letter-spacing);
+}
+.body_m_uppercase {
+  font: var(--body-m-font);
+  letter-spacing: var(--body-m-letter-spacing);
+  text-transform: uppercase;
+}
+.body_s {
+  font: var(--body-s-font);
+  letter-spacing: var(--body-s-letter-spacing);
+}
+.body_s_uppercase {
+  font: var(--body-s-font);
+  letter-spacing: var(--body-s-letter-spacing);
+  text-transform: uppercase;
+}
+.label_font {
+  font: var(--label-font);
+  letter-spacing: var(--label-letter-spacing);
+}
+.label_font_uppercase {
+  font: var(--label-font);
+  letter-spacing: var(--label-letter-spacing);
+  text-transform: uppercase;
+}
+
+/* === Content typography preset classes (Avante content-fonts.css) === */
+.content-heading--custom {
+  font: var(--heading-xs-font);
+  letter-spacing: var(--heading-xs-letter-spacing);
+}
+.content-subheading--custom {
+  font: var(--label-font);
+  letter-spacing: var(--label-letter-spacing);
+}
+.content-text--custom {
+  font: var(--body-m-font);
+  letter-spacing: var(--body-m-letter-spacing);
 }
 
 @layer base {
@@ -123,8 +325,81 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-base);
+    overflow-x: clip;
+    word-break: break-word;
+    position: relative;
+    width: 100vw;
+  }
+  body.hidden {
+    overflow: clip !important;
+    touch-action: none !important;
+    overscroll-behavior-y: none;
   }
   html {
-    @apply font-sans;
+    scroll-behavior: smooth;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+  img {
+    object-fit: cover;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+  }
+
+  /* === Page width container === */
+  .page-width {
+    max-width: var(--page-width);
+    margin: 0 auto;
+  }
+
+  /* === Section padding utilities === */
+  .section-padding--spacious {
+    padding-inline: 48px;
+  }
+  .section-padding--compact {
+    padding-inline: 24px;
+  }
+
+  /* === Button base styles (Avante) === */
+  .solid-button,
+  .outlined-button,
+  .link-button {
+    width: fit-content;
+    transition: all var(--animation-duration) var(--transition-timing-function);
+  }
+  .solid-button,
+  .outlined-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    padding: 6px 24px;
+    min-height: 44px;
+    border-radius: var(--button-radius);
+  }
+  .solid-button {
+    color: rgb(var(--base-button-color, 255 255 255));
+    background-color: rgb(var(--accent-button-color, 46 71 133));
+  }
+  .solid-button:hover {
+    background-color: var(--hover-button-color);
+  }
+  .outlined-button {
+    border: var(--border-thickness) solid currentColor;
+    background-color: transparent;
+  }
+  .outlined-button:hover {
+    color: var(--hover-button-color);
+    border-color: var(--hover-button-color);
+  }
+  .link-button {
+    display: inline;
   }
 }
