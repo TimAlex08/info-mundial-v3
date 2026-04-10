@@ -37,7 +37,8 @@ export interface CollapsibleTabsProps {
   buttonHref?: string;
   buttonStyle?: "solid" | "outlined" | "link";
   targetBlank?: boolean;
-  sectionWidth?: "wide" | "narrow";
+  centerText?: boolean;
+  sectionWidth?: "wide" | "narrow" | "full-width";
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
@@ -58,6 +59,7 @@ export function CollapsibleTabs({
   buttonHref,
   buttonStyle = "solid",
   targetBlank = false,
+  centerText = false,
   sectionWidth = "narrow",
   colorType = "default",
   backgroundColor,
@@ -88,7 +90,7 @@ export function CollapsibleTabs({
     >
       {/* Section header */}
       {hasHeader && (
-        <div className="mb-6">
+        <div className={cn("mb-6", centerText && "text-center")}>
           {subheading && (
             <p className="text-sm font-semibold uppercase tracking-wide opacity-70">
               {subheading}

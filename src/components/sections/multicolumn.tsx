@@ -31,7 +31,7 @@ export interface MulticolumnProps {
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
-  sectionWidth?: "wide" | "narrow";
+  sectionWidth?: "wide" | "narrow" | "full-width";
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
   mobilePaddingTop?: number;
@@ -133,7 +133,7 @@ export function Multicolumn({
             <div
               key={i}
               className={cn(
-                "flex flex-col",
+                "flex h-full flex-col",
                 centerText ? "items-center text-center" : "items-start"
               )}
             >
@@ -169,7 +169,7 @@ export function Multicolumn({
 
               {/* Info */}
               {(item.heading || item.text || item.buttonLabel) && (
-                <div className="mt-3 flex flex-col gap-2">
+                <div className="mt-3 flex flex-1 flex-col gap-2">
                   {item.heading && (
                     <p className="font-bold">{item.heading}</p>
                   )}
@@ -180,12 +180,14 @@ export function Multicolumn({
                     />
                   )}
                   {item.buttonLabel && (
-                    <SectionButton
-                      label={item.buttonLabel}
-                      href={item.buttonHref}
-                      style={buttonStyle}
-                      targetBlank={item.targetBlank}
-                    />
+                    <div className="mt-auto self-center pt-2">
+                      <SectionButton
+                        label={item.buttonLabel}
+                        href={item.buttonHref}
+                        style={buttonStyle}
+                        targetBlank={item.targetBlank}
+                      />
+                    </div>
                   )}
                 </div>
               )}

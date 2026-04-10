@@ -29,74 +29,43 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const MAIN_MENU: MenuItem[] = [
   {
-    key: "partidos_y_sedes",
+    key: "visita_monterrey",
+    href: "/explora-monterrey",
+    children: [
+      { key: "guia_mundialista", href: "/explora-monterrey" },
+      { key: "zonas_de_la_ciudad", href: "/mapa-de-zonas" },
+    ],
+  },
+  {
+    key: "monterrey_se_prepara",
+    href: "/comunidad",
+    children: [
+      { key: "barrio_bonito", href: "/barrio-bonito" },
+      { key: "anfitrion_regio", href: "/anfitriones-regios" },
+      { key: "transformando_mty", href: "/infraestructura" },
+    ],
+  },
+  {
+    key: "como_moverte",
+    href: "/transporte-movilidad",
+    children: [
+      { key: "regio_ruta", href: "https://www.monterrey.gob.mx/regio-ruta" },
+      { key: "transporte", href: "/transporte-movilidad" },
+    ],
+  },
+  {
+    key: "el_mundial_en_mty",
     href: "/partidos-y-sedes",
     children: [
       { key: "calendario_partidos", href: "/calendario-partidos" },
-      { key: "horarios_partidos", href: "/horarios-partidos" },
-      { key: "resultados", href: "/resultados-partidos" },
-      { key: "sedes", href: "/sedes-partidos" },
-    ],
-  },
-  {
-    key: "explora_monterrey",
-    href: "/explora-monterrey",
-    children: [
-      { key: "barrio_antiguo", href: "/barrio-antiguo" },
-      { key: "tours", href: "/tours" },
-      { key: "lugares", href: "/lugares" },
-      { key: "fifa_fan", href: "/fifa-fan" },
-      { key: "eventos", href: "/eventos" },
-    ],
-  },
-  {
-    key: "transporte_y_movilidad",
-    href: "/transporte-y-movilidad",
-    children: [
-      { key: "transporte", href: "/transporte-movilidad" },
-      { key: "estadio_monterrey", href: "/estadio-monterrey" },
-      { key: "mapa_de_zonas", href: "/mapa-de-zonas" },
-    ],
-  },
-  {
-    key: "hospedaje_y_zonas",
-    href: "/hospedaje-y-zonas",
-    children: [
-      { key: "comida", href: "/comida" },
-      { key: "bares", href: "/bares" },
-      { key: "plataformas", href: "/plataformas" },
-      { key: "zonas_recomendadas", href: "/zonas-recomendadas" },
-    ],
-  },
-  {
-    key: "cultura_y_experiencias",
-    href: "/cultura-y-experiencias",
-    children: [
-      { key: "museos", href: "/museos" },
-      { key: "eventos_cultura", href: "/eventos-cultura" },
-    ],
-  },
-  {
-    key: "comunidad",
-    href: "/comunidad",
-    children: [
-      { key: "historias", href: "/historias" },
-      { key: "anfitriones_regios", href: "/anfitriones-regios" },
-      { key: "pancho_mundial", href: "/pancho-mundial" },
+      { key: "sedes_partidos", href: "/sedes-partidos" },
       { key: "mundialito_barrios", href: "/mundialito-barrios" },
     ],
   },
   {
-    key: "noticias",
-    href: "/noticias",
-    children: [
-      { key: "eventos_noticias", href: "/eventos-noticias" },
-      { key: "infraestructura", href: "/infraestructura" },
-    ],
+    key: "historias_de_la_ciudad",
+    href: "/historias",
   },
-  { key: "prensa", href: "/prensa" },
-  { key: "faq", href: "/faq" },
-  { key: "contacto", href: "/contacto" },
 ];
 
 export const FOOTER_MENU: MenuItem[] = [

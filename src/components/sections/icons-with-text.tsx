@@ -22,7 +22,7 @@ export interface IconsWithTextProps {
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
-  sectionWidth?: "wide" | "narrow";
+  sectionWidth?: "wide" | "narrow" | "full-width";
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
   mobilePaddingTop?: number;

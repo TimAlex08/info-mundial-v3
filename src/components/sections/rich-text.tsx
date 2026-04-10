@@ -6,7 +6,7 @@ import { BlockRenderer, type SectionBlock } from "./block-renderer";
 
 export interface RichTextProps {
   blocks: SectionBlock[];
-  sectionWidth?: "wide" | "narrow";
+  sectionWidth?: "wide" | "narrow" | "full-width";
   centerText?: boolean;
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;

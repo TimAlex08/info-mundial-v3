@@ -95,7 +95,10 @@ export default async function HomePage({
         mediaRatio="square"
         centerText={false}
         buttonStyle="outlined"
-        colorType="invert"
+        colorType="custom"
+        backgroundColor="#1f3359"
+        textColor="#ffffff"
+        sectionWidth="full-width"
         desktopPaddingTop={28}
         desktopPaddingBottom={76}
         mobilePaddingTop={12}

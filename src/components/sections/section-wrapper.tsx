@@ -69,7 +69,8 @@ export function SectionWrapper({
         }
       `}</style>
       <div className={cn(
-        sectionWidth !== "full-width" && "px-4 md:px-8"
+        "px-4 md:px-8",
+        sectionWidth === "full-width" && "mx-auto max-w-[var(--page-width)]"
       )}>
         {children}
       </div>

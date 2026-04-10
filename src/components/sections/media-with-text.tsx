@@ -105,13 +105,24 @@ export function MediaWithText({
             <source src={videoSrc} type="video/mp4" />
           </video>
         ) : image ? (
-          <Image
-            src={image}
-            alt={imageAlt}
-            fill
-            className="object-cover"
-            sizes={`(max-width: 920px) 100vw, ${mediaSize === "large" ? "66vw" : mediaSize === "half" ? "50vw" : "33vw"}`}
-          />
+          mediaRatio === "original" ? (
+            <Image
+              src={image}
+              alt={imageAlt}
+              width={0}
+              height={0}
+              sizes={`(max-width: 920px) 100vw, ${mediaSize === "large" ? "66vw" : mediaSize === "half" ? "50vw" : "33vw"}`}
+              className="h-auto w-full"
+            />
+          ) : (
+            <Image
+              src={image}
+              alt={imageAlt}
+              fill
+              className="object-cover"
+              sizes={`(max-width: 920px) 100vw, ${mediaSize === "large" ? "66vw" : mediaSize === "half" ? "50vw" : "33vw"}`}
+            />
+          )
         ) : null}
       </div>
     </div>
@@ -189,7 +200,10 @@ export function MediaWithText({
           }
         }
       `}</style>
-      <div className={cn(sectionWidth !== "full-width" && "px-4 md:px-8")}>
+      <div className={cn(
+        "px-4 md:px-8",
+        sectionWidth === "full-width" && "mx-auto max-w-[var(--page-width)]"
+      )}>
         {wrapperContent}
       </div>
     </section>

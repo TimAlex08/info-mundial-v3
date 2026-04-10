@@ -47,6 +47,8 @@ export interface MediaWithTabsProps {
   verticalAlign?: "start" | "center" | "end";
   horizontalAlign?: "left" | "center" | "right";
   narrowContent?: boolean;
+  verticalTabs?: boolean;
+  contentCard?: boolean;
   sectionWidth?: "full-width" | "wide" | "narrow";
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
@@ -150,6 +152,8 @@ export function MediaWithTabs({
   verticalAlign = "start",
   horizontalAlign = "left",
   narrowContent = true,
+  verticalTabs = false,
+  contentCard = false,
   sectionWidth = "wide",
   colorType = "default",
   backgroundColor,
@@ -243,7 +247,8 @@ export function MediaWithTabs({
             horizontalAlign === "left" && "items-start text-left",
             horizontalAlign === "center" && "items-center text-center",
             horizontalAlign === "right" && "items-end text-right",
-            narrowContent && "mx-auto max-w-[500px]"
+            narrowContent && !contentCard && "mx-auto max-w-[500px]",
+            contentCard && "rounded-[var(--images-and-section-radius)] border border-gray-200 bg-white p-6 shadow-sm md:p-8"
           )}
         >
           {subheading && (
@@ -253,14 +258,18 @@ export function MediaWithTabs({
           )}
 
           {/* Tab headings */}
-          <div className="flex flex-wrap gap-2">
+          <div className={cn(
+            "flex gap-2",
+            verticalTabs ? "flex-col" : "flex-wrap"
+          )}>
             {tabs.map((tab, i) => (
               <button
                 key={i}
                 type="button"
                 onClick={() => setActiveTab(i)}
                 className={cn(
-                  "text-xl font-bold transition-opacity md:text-2xl",
+                  "font-bold uppercase transition-opacity text-left",
+                  verticalTabs ? "text-sm md:text-base" : "text-xl md:text-2xl",
                   i === activeTab ? "opacity-100" : "opacity-40 hover:opacity-70"
                 )}
               >
