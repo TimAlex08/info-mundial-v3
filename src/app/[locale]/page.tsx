@@ -43,9 +43,9 @@ export default async function HomePage({
       <ImageWithHotspots
         id="home-mapa"
         heading="VISITA MONTERREY"
-        desktopImage="/images/Mapa.jpg"
+        desktopImage="/images/mapas/Mapa.jpg"
         desktopImageAlt="Mapa de Monterrey"
-        mobileImage="/images/Mapa-C.jpg"
+        mobileImage="/images/mapas/Mapa-C.jpg"
         mobileImageAlt="Mapa de Monterrey"
         centerText
         colorType="default"
@@ -106,7 +106,7 @@ export default async function HomePage({
         items={[
           {
             type: "image",
-            image: "/images/Imagen-5.jpg",
+            image: "/images/general/Imagen-5.jpg",
             imageAlt: "Rutas principales",
             heading: "Rutas principales",
             text: "<p>Sé que puede ser intimidante, pero aquí la magia serán las <strong>Rutas Especiales para el Estadio</strong>. Busca las rutas anunciadas oficialmente que te dejarán en un perímetro caminable del recinto. Estas rutas estarán claramente señalizadas y suelen ser la opción más directa cuando el Metrorrey</p>",
@@ -114,7 +114,7 @@ export default async function HomePage({
           },
           {
             type: "image",
-            image: "/images/Imagen-6.jpg",
+            image: "/images/general/Imagen-6.jpg",
             imageAlt: "Cómo llegar al estadio",
             heading: "Cómo llegar al estadio",
             text: "<p>Si eres aficionado al fútbol, el <strong>Estadio Monterrey</strong> te va a dejar sin aliento. Es una de las sedes más espectaculares del Mundial. Aquí te hablaré de su esencia como casa de los Rayados y, como tu guía local, te daré los mejores <em>tips</em> para que tu día de partido sea épico.</p>",
@@ -122,7 +122,7 @@ export default async function HomePage({
           },
           {
             type: "image",
-            image: "/images/Imagen-7.jpg",
+            image: "/images/general/Imagen-7.jpg",
             imageAlt: "Regio Ruta",
             heading: "Regio Ruta",
             text: "<p>Nuestra red de autobuses ha mejorado mucho con el sistema <strong>Regio Ruta</strong>, que busca modernizar y ordenar las rutas. Busca las rutas anunciadas oficialmente que te dejarán en un perímetro caminable del recinto.</p>",
@@ -159,7 +159,7 @@ export default async function HomePage({
             type: "media_with_text",
             desktopSize: "small",
             contentPosition: "bottom",
-            image: "/images/Imagen-8.jpg",
+            image: "/images/general/Imagen-8.jpg",
             imageAlt: "Estadio BBVA",
             overlayColor: "#000000",
             overlayOpacity: 0,
@@ -176,14 +176,14 @@ export default async function HomePage({
           {
             type: "media",
             desktopSize: "big",
-            image: "/images/Imagen-10.jpg",
+            image: "/images/general/Imagen-10.jpg",
             imageAlt: "Mascotas del Mundial",
           },
           {
             type: "media_with_text",
             desktopSize: "small",
             contentPosition: "overlay",
-            image: "/images/Imagen-11.jpg",
+            image: "/images/general/Imagen-11.jpg",
             imageAlt: "Balón FIFA World Cup 2026",
             overlayColor: "#000000",
             overlayOpacity: 70,
@@ -218,7 +218,7 @@ export default async function HomePage({
         tabs={[
           {
             type: "image",
-            image: "/images/Voluntarios.png",
+            image: "/images/anfitriones_regios/Voluntarios.png",
             imageAlt: "Voluntarios",
             heading: "Voluntarios",
             text: "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
@@ -227,7 +227,7 @@ export default async function HomePage({
           },
           {
             type: "image",
-            image: "/images/Voluntarios-2.png",
+            image: "/images/voluntarios/Voluntarios-2.png",
             imageAlt: "Trabajadores",
             heading: "Trabajadores",
             text: "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",
@@ -236,7 +236,7 @@ export default async function HomePage({
           },
           {
             type: "image",
-            image: "/images/Voluntarios-3.jpg",
+            image: "/images/voluntarios/Voluntarios-3.jpg",
             imageAlt: "Historias locales",
             heading: "Historias locales",
             text: "<p>Pair text with image or loop video to focus on your featured product, collection, or promotion. Tell a story, describe your brand or share announcements.</p>",

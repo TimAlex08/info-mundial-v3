@@ -64,11 +64,7 @@ export function SplitBanner({
   return (
     <section
       id={id}
-      className={cn(
-        sectionWidth === "wide" &&
-          "mx-auto max-w-[var(--page-width)]",
-        className
-      )}
+      className={cn("w-full", className)}
       style={{
         paddingTop: `${desktopPaddingTop}px`,
         paddingBottom: `${desktopPaddingBottom}px`,

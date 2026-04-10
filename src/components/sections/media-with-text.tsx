@@ -178,12 +178,7 @@ export function MediaWithText({
   return (
     <section
       id={id}
-      className={cn(
-        sectionWidth === "full-width" && "w-full",
-        sectionWidth === "wide" && "mx-auto w-full max-w-[var(--page-width)]",
-        sectionWidth === "narrow" && "mx-auto w-full max-w-[800px]",
-        className
-      )}
+      className={cn("w-full", className)}
       style={{
         ...colorStyles,
         paddingTop: `${desktopPaddingTop}px`,
@@ -200,10 +195,7 @@ export function MediaWithText({
           }
         }
       `}</style>
-      <div className={cn(
-        "px-4 md:px-8",
-        sectionWidth === "full-width" && "mx-auto max-w-[var(--page-width)]"
-      )}>
+      <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
         {wrapperContent}
       </div>
     </section>

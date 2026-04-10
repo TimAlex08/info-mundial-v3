@@ -34,7 +34,7 @@ export default async function BarrioAntiguoPage({
         {
           type: "media",
           desktopSize: "big",
-          image: "/images/Imagen-6.jpg",
+          image: "/images/general/Imagen-6.jpg",
           imageAlt: "Casona colonial Barrio Antiguo",
         },
         {
@@ -53,7 +53,7 @@ export default async function BarrioAntiguoPage({
         {
           type: "media",
           desktopSize: "big",
-          image: "/images/Imagen-7.jpg",
+          image: "/images/general/Imagen-7.jpg",
           imageAlt: "Noche en Barrio Antiguo",
         },
         {

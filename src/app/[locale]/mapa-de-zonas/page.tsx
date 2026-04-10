@@ -52,15 +52,15 @@ export default async function MapaDeZonasPage({
   return (
     <>
       {/* Hero: Mapa ilustrado */}
-      <section className="bg-white px-6 py-16 text-center md:px-16 lg:px-24">
-        <div className="mx-auto max-w-[1100px]">
+      <section className="w-full bg-white py-16 text-center">
+        <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
           <h1 className="mb-10 text-3xl font-black uppercase tracking-tight text-brand-blue-dark md:text-4xl">
             Mapa de Zonas o Zonas a Visitar
           </h1>
 
-          <div className="mx-auto max-w-[900px]">
+          <div className="mx-auto">
             <Image
-              src="/images/MAPA_MTY.png.webp"
+              src="/images/mapas/MAPA_MTY.png.webp"
               alt="Mapa ilustrado de las zonas de Monterrey"
               width={900}
               height={600}
@@ -69,7 +69,7 @@ export default async function MapaDeZonasPage({
             />
           </div>
 
-          <p className="mx-auto mt-10 max-w-[900px] text-base leading-relaxed text-gray-700 md:text-lg">
+          <p className="mx-auto mt-10 text-base leading-relaxed text-gray-700 md:text-lg">
             En Monterrey decimos que somos una ciudad para recorrer, no solo
             para ver. Para que no te sientas perdido en nuestra gran mancha
             urbana, te comparto el &quot;mapa mental&quot; que usamos los regios
@@ -81,14 +81,14 @@ export default async function MapaDeZonasPage({
       </section>
 
       {/* Zona 1: Centro, Macroplaza y Barrio Antiguo */}
-      <section className="bg-[#1f3359] px-6 py-16 text-white md:px-16 lg:px-24">
-        <div className="mx-auto max-w-[1100px]">
+      <section className="w-full bg-[#1f3359] py-16 text-white">
+        <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
           <h2 className="mb-6 text-2xl font-black uppercase tracking-tight md:text-3xl">
             El Corazón Histórico y Fiestero (Centro, Macroplaza y Barrio
             Antiguo)
           </h2>
 
-          <p className="mb-10 max-w-[1100px] text-base leading-relaxed opacity-90 md:text-lg">
+          <p className="mb-10 text-base leading-relaxed opacity-90 md:text-lg">
             Este es el punto neurálgico de la ciudad y donde la mayoría de los
             turistas pasan gran parte del tiempo. La{" "}
             <strong>Macroplaza</strong> es una de las plazas más grandes del
@@ -116,13 +116,13 @@ export default async function MapaDeZonasPage({
       </section>
 
       {/* Zona 2: San Pedro Garza García */}
-      <section className="bg-[#82bbe8] px-6 py-16 text-[#2e4785] md:px-16 lg:px-24">
-        <div className="mx-auto max-w-[1100px]">
+      <section className="w-full bg-[#82bbe8] py-16 text-[#2e4785]">
+        <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
           <h2 className="mb-6 text-2xl font-black uppercase tracking-tight md:text-3xl">
             La Zona Ejecutiva y de Lujo (San Pedro Garza García)
           </h2>
 
-          <p className="mb-10 max-w-[1100px] text-base leading-relaxed opacity-90 md:text-lg">
+          <p className="mb-10 text-base leading-relaxed opacity-90 md:text-lg">
             San Pedro es el municipio vecino, conocido por su modernidad, sus
             centros comerciales de alto nivel (como Fashion Drive) y su vasta
             oferta gastronómica <em>premium</em>. Si tu presupuesto lo permite,
@@ -151,13 +151,13 @@ export default async function MapaDeZonasPage({
       </section>
 
       {/* Zona 3: Guadalupe y el Estadio */}
-      <section className="bg-[#2e4785] px-6 py-16 text-white md:px-16 lg:px-24">
-        <div className="mx-auto max-w-[1100px]">
+      <section className="w-full bg-[#2e4785] py-16 text-white">
+        <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
           <h2 className="mb-6 text-2xl font-black uppercase tracking-tight md:text-3xl">
             La Zona del Partido (Guadalupe y el Estadio)
           </h2>
 
-          <p className="mb-10 max-w-[1100px] text-base leading-relaxed opacity-90 md:text-lg">
+          <p className="mb-10 text-base leading-relaxed opacity-90 md:text-lg">
             El Estadio Monterrey está ubicado estratégicamente en el municipio de
             Guadalupe. Para el aficionado, esta zona se convierte en el destino
             principal. Lo importante aquí es entender la{" "}

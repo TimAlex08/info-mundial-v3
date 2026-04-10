@@ -39,7 +39,7 @@ export default async function PanchoMundialPage({
       />
 
       <MediaWithText
-        image="/images/Imagen-9.jpg"
+        image="/images/general/Imagen-9.jpg"
         imageAlt="Pancho Mundial"
         swapMedia
         mediaRatio="square"
@@ -79,7 +79,7 @@ export default async function PanchoMundialPage({
           {
             type: "media",
             desktopSize: "big",
-            image: "/images/Imagen-10.jpg",
+            image: "/images/general/Imagen-10.jpg",
             imageAlt: "Pancho Mundial en el campo",
           },
         ]}

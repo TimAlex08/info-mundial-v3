@@ -77,7 +77,7 @@ export default async function AnfitrionesRegiosPage({
             type: "media_with_text",
             desktopSize: "small",
             contentPosition: "top",
-            image: "/images/Voluntarios-3.jpg",
+            image: "/images/voluntarios/Voluntarios-3.jpg",
             imageAlt: "Vista panorámica de Monterrey",
             overlayColor: "#000000",
             overlayOpacity: 0,
@@ -119,7 +119,7 @@ export default async function AnfitrionesRegiosPage({
         className="w-full"
         style={{ paddingTop: 48, paddingBottom: 48 }}
       >
-        <div className="mx-auto max-w-[var(--page-width)] px-4 md:px-8">
+        <div className="mx-auto w-full px-6 md:max-w-[66%] md:px-0">
           <div className="mb-8 text-center">
             <h2 className="text-2xl font-bold md:text-3xl">¿QUÉ OBTIENES AL SER ANFITRIÓN REGIO?</h2>
             <p className="mt-4 opacity-70">Además de vivir el Mundial desde dentro, ser Anfitrión Regio te ofrece beneficios formativos, profesionales y personales.</p>
@@ -128,7 +128,7 @@ export default async function AnfitrionesRegiosPage({
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
             <div className="rounded-[var(--radius)] border border-[#1f3359] bg-white p-6 text-center shadow-md">
               <div className="relative mx-auto mb-4 h-28 w-28 shrink-0 overflow-hidden rounded-[var(--radius)]">
-                <Image src="/images/Voluntarios-4.jpg" alt="Valor académico y profesional" fill className="object-cover" sizes="112px" />
+                <Image src="/images/voluntarios/Voluntarios-4.jpg" alt="Valor académico y profesional" fill className="object-cover" sizes="112px" />
               </div>
               <h3 className="mb-3 text-base font-bold uppercase">Valor Académico y Profesional</h3>
               <ul className="space-y-2 text-sm opacity-90">
@@ -139,7 +139,7 @@ export default async function AnfitrionesRegiosPage({
 
             <div className="rounded-[var(--radius)] border border-[#1f3359] bg-white p-6 text-center shadow-md">
               <div className="relative mx-auto mb-4 h-28 w-28 shrink-0 overflow-hidden rounded-[var(--radius)]">
-                <Image src="/images/Voluntarios-5.jpg" alt="Recursos y capacitación" fill className="object-cover" sizes="112px" />
+                <Image src="/images/voluntarios/Voluntarios-5.jpg" alt="Recursos y capacitación" fill className="object-cover" sizes="112px" />
               </div>
               <h3 className="mb-3 text-base font-bold uppercase">Recursos y Capacitación</h3>
               <ul className="space-y-2 text-sm opacity-90">
@@ -150,7 +150,7 @@ export default async function AnfitrionesRegiosPage({
 
             <div className="rounded-[var(--radius)] border border-[#1f3359] bg-white p-6 text-center shadow-md">
               <div className="relative mx-auto mb-4 h-28 w-28 shrink-0 overflow-hidden rounded-[var(--radius)]">
-                <Image src="/images/Voluntarios-7.jpg" alt="Experiencia y reconocimiento" fill className="object-cover" sizes="112px" />
+                <Image src="/images/voluntarios/Voluntarios-7.jpg" alt="Experiencia y reconocimiento" fill className="object-cover" sizes="112px" />
               </div>
               <h3 className="mb-3 text-base font-bold uppercase">Experiencia y Reconocimiento</h3>
               <ul className="space-y-2 text-sm opacity-90">
@@ -161,7 +161,7 @@ export default async function AnfitrionesRegiosPage({
 
             <div className="rounded-[var(--radius)] border border-[#1f3359] bg-white p-6 text-center shadow-md">
               <div className="relative mx-auto mb-4 h-28 w-28 shrink-0 overflow-hidden rounded-[var(--radius)]">
-                <Image src="/images/Voluntarios-6.jpg" alt="Beneficios adicionales" fill className="object-cover" sizes="112px" />
+                <Image src="/images/voluntarios/Voluntarios-6.jpg" alt="Beneficios adicionales" fill className="object-cover" sizes="112px" />
               </div>
               <h3 className="mb-3 text-base font-bold uppercase">Beneficios Adicionales</h3>
               <ul className="space-y-2 text-sm opacity-90">
@@ -189,7 +189,7 @@ export default async function AnfitrionesRegiosPage({
 
       {/* ¿Cómo es el proceso? */}
       <MediaWithText
-        image="/images/Voluntarios-2.png"
+        image="/images/voluntarios/Voluntarios-2.png"
         imageAlt="Proceso de registro"
         sectionWidth="narrow"
         mediaRatio="original"

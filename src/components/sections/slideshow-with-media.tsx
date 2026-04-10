@@ -106,8 +106,7 @@ export function SlideshowWithMedia({
     <section
       id={id}
       className={cn(
-        "relative overflow-hidden",
-        sectionWidth === "wide" && "mx-auto max-w-[var(--page-width)]",
+        "relative w-full overflow-hidden",
         className
       )}
       style={{

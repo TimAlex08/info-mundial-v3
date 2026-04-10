@@ -38,7 +38,7 @@ export default async function EstadioMonterreyPage({
           {
             type: "media",
             desktopSize: "big",
-            image: "/images/Imagen-8.jpg",
+            image: "/images/general/Imagen-8.jpg",
             imageAlt: "Estadio Monterrey exterior",
           },
           {
@@ -57,7 +57,7 @@ export default async function EstadioMonterreyPage({
           {
             type: "media",
             desktopSize: "big",
-            image: "/images/Imagen-9.jpg",
+            image: "/images/general/Imagen-9.jpg",
             imageAlt: "Interior del Estadio Monterrey",
           },
           {
@@ -73,7 +73,7 @@ export default async function EstadioMonterreyPage({
           {
             type: "media",
             desktopSize: "big",
-            image: "/images/Imagen-5.jpg",
+            image: "/images/general/Imagen-5.jpg",
             imageAlt: "Estadio Monterrey día de partido",
           },
           {

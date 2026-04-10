@@ -17,7 +17,7 @@ export default async function MundialitoBarriosPage({
   return (
     <>
       <MediaWithText
-        image="/images/Mundialitos-1.png"
+        image="/images/mundialitos/Mundialitos-1.png"
         imageAlt="Mundialito Torneo de Barrios"
         sectionWidth="narrow"
         mediaRatio="original"
@@ -46,7 +46,7 @@ export default async function MundialitoBarriosPage({
       />
 
       <MediaWithText
-        image="/images/Mundialitos-3.png"
+        image="/images/mundialitos/Mundialitos-3.png"
         imageAlt="Inscripciones Mundialito"
         sectionWidth="narrow"
         swapMedia
@@ -64,7 +64,7 @@ export default async function MundialitoBarriosPage({
         centerText
         desktopPaddingBottom={-24}
         blocks={[
-          { type: "context_image", src: "/images/Mundialitos-9.png", alt: "Reglas del torneo" },
+          { type: "context_image", src: "/images/mundialitos/Mundialitos-9.png", alt: "Reglas del torneo" },
         ]}
       />
 
@@ -89,7 +89,7 @@ export default async function MundialitoBarriosPage({
         desktopPaddingTop={-36}
         desktopPaddingBottom={-28}
         blocks={[
-          { type: "context_image", src: "/images/Mundialitos-6.png", alt: "Formato del torneo" },
+          { type: "context_image", src: "/images/mundialitos/Mundialitos-6.png", alt: "Formato del torneo" },
         ]}
       />
 
@@ -109,7 +109,7 @@ export default async function MundialitoBarriosPage({
       />
 
       <MediaWithText
-        image="/images/Mundialitos-8.png"
+        image="/images/mundialitos/Mundialitos-8.png"
         imageAlt="Zonas de Eliminación"
         swapMedia
         mediaRatio="original"
@@ -122,7 +122,7 @@ export default async function MundialitoBarriosPage({
       />
 
       <ImageBanner
-        image="/images/Mundialitos-10.png"
+        image="/images/mundialitos/Mundialitos-10.png"
         imageAlt="Junta Técnica Mundialito"
         desktopHeight={50}
         mobileHeight={45}
@@ -145,7 +145,7 @@ export default async function MundialitoBarriosPage({
         desktopPaddingTop={-60}
         desktopPaddingBottom={-28}
         blocks={[
-          { type: "context_image", src: "/images/Mundialitos-12.png", alt: "Patrocinadores" },
+          { type: "context_image", src: "/images/mundialitos/Mundialitos-12.png", alt: "Patrocinadores" },
         ]}
       />
 
