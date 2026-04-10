@@ -25,7 +25,7 @@ export default async function FifaFanPage({
       <RichText
         blocks={[
           { type: "subheading", text: "FIFA Fan Fest" },
-          { type: "heading", text: "¡El Corazón Pulsante del Mundial en Monterrey!" },
+          { type: "heading", text: "¡El Corazón Pulsante del Mundial en Monterrey!", tag: "h1" },
           { type: "text", content: "<p>Si hay un lugar que tienes que visitar sí o sí, incluso si no tienes boletos para el partido, es el <strong>FIFA Fan Fest Oficial</strong>. Este es el cuartel general de la fiesta mundial, un evento gratuito, seguro y la mejor forma de sentir la energía del torneo. </p>" },
         ]}
       />

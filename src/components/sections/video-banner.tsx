@@ -20,6 +20,8 @@ export interface VideoBannerProps {
   desktopPaddingBottom?: number;
   mobilePaddingTop?: number;
   mobilePaddingBottom?: number;
+  /** Mark as true for above-the-fold hero videos to enable preloading */
+  priority?: boolean;
   id?: string;
   className?: string;
 }
@@ -40,6 +42,7 @@ export function VideoBanner({
   desktopPaddingBottom = 0,
   mobilePaddingTop = 0,
   mobilePaddingBottom = 0,
+  priority = false,
   id,
   className,
 }: VideoBannerProps) {
@@ -75,6 +78,7 @@ export function VideoBanner({
         loop
         muted
         playsInline
+        preload={priority ? "auto" : "metadata"}
         poster={posterImage}
         className="absolute inset-0 h-full w-full object-cover"
       >

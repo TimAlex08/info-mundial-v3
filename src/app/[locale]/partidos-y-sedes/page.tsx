@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { VideoBanner } from "@/components/sections/video-banner";
 import { Events } from "@/components/sections/events";
 import { MediaWithTabs } from "@/components/sections/media-with-tabs";
 import { CollapsibleTabs } from "@/components/sections/collapsible-tabs";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Partidos y Sedes";
+  const description =
+    "Información sobre los partidos del Mundial FIFA 2026 en Monterrey: calendario, sedes, selecciones y todo lo que necesitas saber.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/partidos-y-sedes`,
+    },
+  };
+}
 
 export default async function PartidosYSedesPage({
   params,
@@ -26,7 +48,7 @@ export default async function PartidosYSedesPage({
         sectionWidth="wide"
         blocks={[
           { type: "subheading", text: "Subheading" },
-          { type: "heading", text: "Video banner heading" },
+          { type: "heading", text: "Video banner heading", tag: "h1" },
           { type: "text", content: "<p>Add an optional description to a promotion, product, or collection.</p>" },
           { type: "button", label: "Discover", style: "outlined" },
         ]}

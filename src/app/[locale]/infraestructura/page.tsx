@@ -13,6 +13,7 @@ export default async function InfraestructuraPage({
     <Banners
       subheading=""
       heading="Infraestructura de Clase Mundial"
+      headingTag="h1"
       text='<p>Monterrey no solo será sede, será el ejemplo de cómo una ciudad se reinventa. El municipio, bajo el lema <em>"Aquí se Resuelve"</em>, está ejecutando un plan de infraestructura que va mucho más allá de las canchas. Como tu guía experto, te presento los pilares que cambiarán tu forma de moverte y vivir la ciudad en 2026.</p>'
       mediaRatio="square"
       centerText={false}

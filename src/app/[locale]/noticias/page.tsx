@@ -13,6 +13,7 @@ export default async function NoticiasPage({
     <>
       <FeaturedBlog
         heading="Blog posts"
+        headingTag="h1"
         buttonLabel="View all"
         imageRatio="square"
         readMoreLabel="Keep reading"

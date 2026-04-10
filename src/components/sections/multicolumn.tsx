@@ -31,6 +31,7 @@ export interface MulticolumnProps {
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
+  headingTag?: "h1" | "h2" | "h3";
   sectionWidth?: "wide" | "narrow" | "full-width";
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
@@ -68,6 +69,7 @@ export function Multicolumn({
   maxColumns = "default",
   mobileColumns = 2,
   mediaRatio = "square",
+  headingTag: HeadingTag = "h2",
   centerText = false,
   buttonStyle = "outlined",
   colorType = "default",
@@ -115,7 +117,7 @@ export function Multicolumn({
             </p>
           )}
           {heading && (
-            <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+            <HeadingTag className="text-2xl font-bold md:text-3xl">{heading}</HeadingTag>
           )}
         </div>
       )}

@@ -7,6 +7,7 @@ import { ChevronDown, Search, Flame } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { SocialMediaLinks } from "@/components/ui/social-media-links";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useLayoutState } from "./layout-state-provider";
 import { MAIN_MENU, SOCIAL_LINKS, SITE_NAME } from "@/lib/constants";
 
@@ -143,6 +144,7 @@ export function DesktopHeader({ locale }: DesktopHeaderProps) {
           >
             <Flame className="h-5 w-5" />
           </Link>
+          <LanguageSwitcher locale={locale} variant="dropdown" />
           <div className="ml-2 border-l border-gray-200 pl-3">
             <SocialMediaLinks links={SOCIAL_LINKS} />
           </div>

@@ -51,16 +51,16 @@ export function CountdownTimer({
   }, [targetDate]);
 
   const units = [
-    { value: timeLeft.days, label: t("days_short") },
-    { value: timeLeft.hours, label: t("hours_short") },
-    { value: timeLeft.minutes, label: t("minutes_short") },
-    { value: timeLeft.seconds, label: t("seconds_short") },
+    { key: "days", value: timeLeft.days, label: t("days_short") },
+    { key: "hours", value: timeLeft.hours, label: t("hours_short") },
+    { key: "minutes", value: timeLeft.minutes, label: t("minutes_short") },
+    { key: "seconds", value: timeLeft.seconds, label: t("seconds_short") },
   ];
 
   return (
     <div className="flex items-center gap-1 font-bold tabular-nums">
       {units.map((unit, i) => (
-        <span key={unit.label} className="flex items-center gap-0.5">
+        <span key={unit.key} className="flex items-center gap-0.5">
           <span style={{ color: textColor }}>
             {String(unit.value).padStart(2, "0")}
           </span>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Search, Flame } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/ui/logo";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { useLayoutState } from "./layout-state-provider";
 
 interface MobileHeaderProps {
@@ -51,8 +52,8 @@ export function MobileHeader({ locale }: MobileHeaderProps) {
         {/* Center: Logo */}
         <Logo height={80} locale={locale} />
 
-        {/* Right: News */}
-        <div className="flex items-center gap-1">
+        {/* Right: News + Language */}
+        <div className="flex items-center gap-0.5">
           <Link
             href={`/${locale}/noticias`}
             className="flex h-11 w-11 items-center justify-center transition-opacity hover:opacity-70"
@@ -60,6 +61,7 @@ export function MobileHeader({ locale }: MobileHeaderProps) {
           >
             <Flame className="h-5 w-5" />
           </Link>
+          <LanguageSwitcher locale={locale} variant="dropdown" />
         </div>
       </div>
     </header>

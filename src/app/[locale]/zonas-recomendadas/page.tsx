@@ -11,6 +11,7 @@ export default async function ZonasRecomendadasPage({
 
   return (
     <HorizontalScrollingBanners
+      headingTag="h1"
       blocks={[
         {
           type: "text",

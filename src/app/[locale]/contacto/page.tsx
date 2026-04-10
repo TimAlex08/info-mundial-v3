@@ -1,5 +1,27 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { SplitBanner } from "@/components/sections/split-banner";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Contacto";
+  const description =
+    "Contacta al equipo del Mundial FIFA 2026 en Monterrey. Encuentra información de contacto, redes sociales y canales oficiales.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/contacto`,
+    },
+  };
+}
 
 export default async function ContactoPage({
   params,
@@ -11,6 +33,7 @@ export default async function ContactoPage({
 
   return (
     <SplitBanner
+      headingTag="h1"
       contentOnHover
       desktopHeight={70}
       mobileHeight={60}

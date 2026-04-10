@@ -11,6 +11,7 @@ export default async function BaresPage({
 
   return (
     <HorizontalScrollingBanners
+      headingTag="h1"
       blocks={[
         {
           type: "text",

@@ -1,6 +1,9 @@
 import type { MenuItem, SocialLink } from "./types";
 
 export const SITE_NAME = "Monterrey FIFA 2026";
+export const SITE_URL = "https://monterreyfifa2026.com";
+export const SITE_DESCRIPTION =
+  "Portal oficial de Monterrey como sede de la Copa Mundial de la FIFA 2026™. Descubre partidos, estadio, transporte, cultura, gastronomía y todo lo que necesitas saber.";
 
 export const COUNTDOWN_TARGET = "2026-06-11T13:00:00";
 

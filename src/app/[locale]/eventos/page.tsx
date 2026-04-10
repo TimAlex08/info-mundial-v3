@@ -32,7 +32,7 @@ export default async function EventosPage({
       <RichText
         blocks={[
           { type: "subheading", text: "Eventos y Ferias" },
-          { type: "heading", text: "El Lado B de la Fiesta Regia" },
+          { type: "heading", text: "El Lado B de la Fiesta Regia", tag: "h1" },
           { type: "text", content: "<p>El Mundial va a ser el evento principal, claro, pero Monterrey nunca se detiene. Como ciudad industrial y cultural, siempre hay algo sucediendo. Más allá de los conciertos gigantes o los <em>Fan Fests</em> (que cubriremos aparte), aquí te cuento sobre esos eventos locales que te van a dar un <em>feeling</em> auténtico de la vida regia.</p>" },
         ]}
       />

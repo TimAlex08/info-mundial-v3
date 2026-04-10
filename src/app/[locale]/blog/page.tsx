@@ -13,6 +13,7 @@ export default async function BlogPage({
     <>
       <FeaturedBlog
         heading="Noticias y Actualizaciones"
+        headingTag="h1"
         imageRatio="original"
         readMoreLabel="Leer más"
         showDate

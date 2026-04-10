@@ -17,7 +17,7 @@ export default async function ToursPage({
         sectionWidth="narrow"
         blocks={[
           { type: "subheading", text: "Tours Organizados:" },
-          { type: "heading", text: "Conoce Nuevo León Sin Preocupaciones" },
+          { type: "heading", text: "Conoce Nuevo León Sin Preocupaciones", tag: "h1" },
           { type: "text", content: "<p>Si ya tienes un par de días libres y quieres salir de la mancha urbana, Nuevo León tiene joyas naturales espectaculares. Como tu guía personal, te recomiendo encarecidamente que uses tours organizados. ¿Por qué? Porque la logística para ir a las afueras puede ser complicada, y un tour te garantiza transporte seguro, guía y te ahorra tiempo de planeación.</p>" },
         ]}
       />

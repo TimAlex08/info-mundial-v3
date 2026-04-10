@@ -11,6 +11,7 @@ export default async function BarrioAntiguoPage({
 
   return (
     <HorizontalScrollingBanners
+      headingTag="h1"
       blocks={[
         {
           type: "media",

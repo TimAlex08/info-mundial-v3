@@ -68,7 +68,7 @@ export default async function BlogArticlePage({
         sectionWidth="narrow"
         desktopPaddingTop={32}
         blocks={[
-          { type: "heading", text: article.title },
+          { type: "heading", text: article.title, tag: "h1" },
           { type: "subheading", text: article.date },
           { type: "text", content: article.content },
           { type: "button", label: "Volver al blog", style: "outlined" },

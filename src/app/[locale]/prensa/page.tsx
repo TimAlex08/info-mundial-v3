@@ -13,6 +13,7 @@ export default async function PrensaPage({
     <Banners
       subheading="Recursos"
       heading="recursos"
+      headingTag="h1"
       text="<p>Short description.</p>"
       mediaRatio="square"
       centerText={false}

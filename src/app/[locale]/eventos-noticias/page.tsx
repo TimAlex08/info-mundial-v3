@@ -15,7 +15,7 @@ export default async function EventosNoticiasPage({
       <RichText
         desktopPaddingTop={64}
         blocks={[
-          { type: "heading", text: "LA INFORMACIÓN CALIENTE QUE NO ENCONTRARÁS EN LAS GUÍAS" },
+          { type: "heading", text: "LA INFORMACIÓN CALIENTE QUE NO ENCONTRARÁS EN LAS GUÍAS", tag: "h1" },
           { type: "text", content: "<p>En el Mundial, el calendario de eventos es fluido. Los horarios cambian, se anuncian conciertos sorpresa, y las autoridades ajustan la logística. Como experto regio y futbolero, te digo que esta subsección no es solo una lista, ¡es un servicio de inteligencia! Queremos que seas el primero en saber si la banda que te gusta tocará en el <strong>Fan Fest</strong> o si el horario de un mercado artesanal se extendió.</p>" },
           { type: "subheading", text: "El Enfoque de la Noticia Logística" },
           { type: "text", content: "<p>Nuestras \"Noticias de Eventos\" se centrarán en dos áreas clave:</p>" },

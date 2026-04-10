@@ -18,7 +18,7 @@ export default async function ResultadosPartidosPage({
         desktopPaddingBottom={-8}
         blocks={[
           { type: "subheading", text: "Resultados Regios" },
-          { type: "heading", text: "El Resumen Rápido y Confiable" },
+          { type: "heading", text: "El Resumen Rápido y Confiable", tag: "h1" },
           { type: "text", content: "<p>Si no pudiste asistir al partido o si simplemente quieres verificar el marcador final mientras estás disfrutando de un cabrito, esta subsección es tu parada obligada. Como experto en contenido, sabemos que la información de <strong>resultados debe ser rápida, limpia y 100% precisa</strong>.</p>" },
         ]}
       />

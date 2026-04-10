@@ -1,6 +1,28 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { RichText } from "@/components/sections/rich-text";
 import { HorizontalScrollingBanners } from "@/components/sections/horizontal-scrolling-banners";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Estadio Monterrey";
+  const description =
+    "Conoce el Estadio BBVA Monterrey, sede del Mundial FIFA 2026. Capacidad, ubicación, cómo llegar y todo lo que necesitas saber para tu día de partido.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/estadio-monterrey`,
+    },
+  };
+}
 
 export default async function EstadioMonterreyPage({
   params,
@@ -15,7 +37,7 @@ export default async function EstadioMonterreyPage({
       <RichText
         desktopPaddingBottom={32}
         blocks={[
-          { type: "heading", text: "ESTADIO MONTERREY" },
+          { type: "heading", text: "ESTADIO MONTERREY", tag: "h1" },
           { type: "text", content: "<p>Si eres aficionado al fútbol, el <strong>Estadio Monterrey</strong> te va a dejar sin aliento. Es una de las sedes más espectaculares del Mundial. Aquí te hablaré de su esencia como casa de los Rayados y, como tu guía local, te daré los mejores <em>tips</em> para que tu día de partido sea épico.</p>" },
         ]}
       />

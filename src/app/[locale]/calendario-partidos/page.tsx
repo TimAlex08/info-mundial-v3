@@ -1,6 +1,28 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { HorizontalScrollingBanners } from "@/components/sections/horizontal-scrolling-banners";
 import { MatchBracket } from "./match-bracket";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Calendario de Partidos";
+  const description =
+    "Consulta el calendario completo de partidos del Mundial FIFA 2026 en Monterrey. Fechas, horarios y selecciones que jugarán en el Estadio BBVA.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/calendario-partidos`,
+    },
+  };
+}
 
 export default async function CalendarioPartidosPage({
   params,
@@ -13,6 +35,7 @@ export default async function CalendarioPartidosPage({
   return (
     <>
       <HorizontalScrollingBanners
+        headingTag="h1"
         id="calendario-partidos"
         blocks={[
           {

@@ -29,7 +29,7 @@ export default async function AnfitrionesRegiosPage({
           desktopPaddingBottom={32}
           className="text-sm [&_h2]:!text-lg [&_h2]:md:!text-xl"
           blocks={[
-            { type: "heading", text: "ANFITRIONES REGIOS 2026" },
+            { type: "heading", text: "ANFITRIONES REGIOS 2026", tag: "h1" },
             { type: "text", content: "<p><em>Forma parte del Mundial 2026 y representa la hospitalidad de Monterrey ante visitantes de todo el mundo.</em></p>" },
             { type: "text", content: "<p>Súmate al programa oficial de voluntariado del Municipio de Monterrey para recibir, orientar y apoyar a quienes visitarán nuestra ciudad durante el evento más importante del planeta.</p>" },
             { type: "button", label: "QUIERO SER ANFITRIÓN REGIO", style: "outlined" },

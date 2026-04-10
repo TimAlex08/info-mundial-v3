@@ -1,8 +1,30 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { VideoBanner } from "@/components/sections/video-banner";
 import { ImageWithHotspots } from "@/components/sections/image-with-hotspots";
 import { CollapsibleTabs } from "@/components/sections/collapsible-tabs";
 import { Multicolumn } from "@/components/sections/multicolumn";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Explora Monterrey";
+  const description =
+    "Guía mundialista de Monterrey: descubre zonas, restaurantes, bares, museos, tours y las mejores experiencias para disfrutar la ciudad durante el Mundial 2026.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/explora-monterrey`,
+    },
+  };
+}
 
 export default async function ExploraMonterreyPage({
   params,
@@ -26,7 +48,7 @@ export default async function ExploraMonterreyPage({
         sectionWidth="wide"
         blocks={[
           { type: "subheading", text: "Subheading" },
-          { type: "heading", text: "Video banner heading" },
+          { type: "heading", text: "Video banner heading", tag: "h1" },
           { type: "text", content: "<p>Add an optional description to a promotion, product, or collection.</p>" },
           { type: "button", label: "Discover", style: "outlined" },
         ]}

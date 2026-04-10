@@ -23,6 +23,7 @@ export default async function TransporteYMovilidadPage({
 
       <CollapsibleTabs
         heading="Collapsible tabs"
+        headingTag="h1"
         sectionWidth="narrow"
         buttonLabel="View all"
         blocks={[

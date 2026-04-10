@@ -19,7 +19,7 @@ export default async function SedesPartidosPage({
         desktopPaddingBottom={16}
         blocks={[
           { type: "subheading", text: "SEDES DEL MUNDIAL" },
-          { type: "heading", text: "DONDE LA MAGIA SUCEDE (DENTRO Y FUERA DE LA CANCHA)" },
+          { type: "heading", text: "DONDE LA MAGIA SUCEDE (DENTRO Y FUERA DE LA CANCHA)", tag: "h1" },
           { type: "text", content: "<p>Cuando hablamos de sedes, no solo nos referimos al Estadio Monterrey, sino también a las <strong>canchas de entrenamiento</strong> que usarán las selecciones. </p><p>Esto es un <em>Regio-Tip</em> de oro: a veces, los entrenamientos abiertos son la mejor forma de ver a tus ídolos de cerca.</p>" },
         ]}
       />

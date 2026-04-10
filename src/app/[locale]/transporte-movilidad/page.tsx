@@ -1,6 +1,28 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { RichText } from "@/components/sections/rich-text";
 import { TransportTabs } from "./transport-tabs";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const title = "Transporte y Movilidad";
+  const description =
+    "Cómo moverte en Monterrey durante el Mundial 2026: Metrorrey, Regio Ruta, rutas al estadio, taxis, apps de transporte y consejos de movilidad.";
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      url: `${SITE_URL}/${locale}/transporte-movilidad`,
+    },
+  };
+}
 
 export default async function TransporteMovilidadPage({
   params,
@@ -19,7 +41,7 @@ export default async function TransporteMovilidadPage({
         desktopPaddingBottom={24}
         className="[&_p]:text-justify"
         blocks={[
-          { type: "heading", text: "¡Bienvenidos a la Sultana del Norte!" },
+          { type: "heading", text: "¡Bienvenidos a la Sultana del Norte!", tag: "h1" },
           { type: "text", content: "<p>Si algo te va a ahorrar dolores de cabeza en Monterrey durante el Mundial 2026 es entender cómo nos movemos. Créeme, no querrás pasar horas en el tráfico tratando de llegar al estadio. Como un regio que sabe lo que te recomienda, te digo que la clave aquí es la <strong>planeación</strong> y, sobre todo, aprender a usar nuestro sistema de transporte masivo: el <strong>Metrorrey</strong>.</p>" },
         ]}
       />

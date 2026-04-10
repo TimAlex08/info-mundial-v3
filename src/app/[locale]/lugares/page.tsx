@@ -17,7 +17,7 @@ export default async function LugaresPage({
         desktopPaddingTop={56}
         blocks={[
           { type: "subheading", text: "Lugares Imperdibles:" },
-          { type: "heading", text: "La Ruta que No Hace el Turista Común" },
+          { type: "heading", text: "La Ruta que No Hace el Turista Común", tag: "h1" },
           { type: "text", content: "<p>Mira, venir a Monterrey solo a ver el partido es un error. Aquí el paisaje es una extensión de la ciudad, y tenemos lugares que te van a dejar con la boca abierta. Como tu amigo regio, te voy a dar la lista de esos \"must-see\" que tienes que priorizar si tienes unas horas libres.</p>" },
         ]}
       />

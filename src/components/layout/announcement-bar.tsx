@@ -1,5 +1,3 @@
-"use client";
-
 import { Timer } from "lucide-react";
 import { CountdownTimer } from "@/components/ui/countdown-timer";
 import { COUNTDOWN_TARGET } from "@/lib/constants";

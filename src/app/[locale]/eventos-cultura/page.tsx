@@ -16,7 +16,7 @@ export default async function EventosCulturaPage({
         sectionWidth="narrow"
         blocks={[
           { type: "subheading", text: "La Fiesta Regia:" },
-          { type: "heading", text: "El Calendario que No Puedes Ignorar" },
+          { type: "heading", text: "El Calendario que No Puedes Ignorar", tag: "h1" },
           { type: "text", content: "<p>Monterrey es una ciudad que sabe hacer fiestas. Además del ambiente futbolero, puedes esperar una agenda cultural y de entretenimiento diseñada específicamente para el Mundial 2026. Como experto local, te aseguro que estos eventos son clave para vivir la ciudad al máximo y serán puntos de reunión fantásticos.</p>" },
         ]}
       />

@@ -34,6 +34,7 @@ export interface BannersProps {
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
+  headingTag?: "h1" | "h2" | "h3";
   sectionWidth?: "wide" | "narrow";
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
@@ -62,6 +63,7 @@ export function Banners({
   items,
   mediaRatio = "square",
   centerText = false,
+  headingTag: HeadingTag = "h2",
   cardButtonStyle = "outlined",
   mobileColumns = 2,
   colorType = "default",
@@ -108,7 +110,7 @@ export function Banners({
                 </p>
               )}
               {heading && (
-                <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+                <HeadingTag className="text-2xl font-bold md:text-3xl">{heading}</HeadingTag>
               )}
               {text && (
                 <div

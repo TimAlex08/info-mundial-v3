@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -36,6 +34,7 @@ export interface SplitBannerProps {
   mobileHeight?: number;
   sectionWidth?: "full-width" | "wide";
   narrowContent?: boolean;
+  headingTag?: "h1" | "h2" | "h3";
   contentOnHover?: boolean;
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
@@ -50,6 +49,7 @@ export function SplitBanner({
   desktopHeight = 70,
   mobileHeight = 60,
   sectionWidth = "full-width",
+  headingTag,
   narrowContent = true,
   contentOnHover = true,
   desktopPaddingTop = 0,
@@ -167,11 +167,14 @@ export function SplitBanner({
                     {panel.subheading}
                   </p>
                 )}
-                {panel.heading && (
-                  <h2 className="text-2xl font-bold md:text-3xl">
-                    {panel.heading}
-                  </h2>
-                )}
+                {panel.heading && (() => {
+                  const Tag = i === 0 && headingTag ? headingTag : "h2";
+                  return (
+                    <Tag className="text-2xl font-bold md:text-3xl">
+                      {panel.heading}
+                    </Tag>
+                  );
+                })()}
                 {panel.text && (
                   <div
                     className="prose max-w-none"

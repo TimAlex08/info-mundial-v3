@@ -11,6 +11,8 @@ export interface OptimizedImageProps {
   ratio?: ImageRatio;
   fill?: boolean;
   priority?: boolean;
+  sizes?: string;
+  loading?: "lazy" | "eager";
   className?: string;
   containerClassName?: string;
   style?: React.CSSProperties;
@@ -32,6 +34,8 @@ export function OptimizedImage({
   ratio = "original",
   fill = false,
   priority = false,
+  sizes,
+  loading,
   className,
   containerClassName,
   style,
@@ -50,8 +54,9 @@ export function OptimizedImage({
           alt={alt}
           fill
           priority={priority}
+          loading={loading ?? (priority ? "eager" : "lazy")}
           className={cn("object-cover", className)}
-          sizes="(max-width: 920px) 100vw, 50vw"
+          sizes={sizes ?? "(max-width: 920px) 100vw, 50vw"}
           style={style}
         />
       </div>
@@ -72,6 +77,7 @@ export function OptimizedImage({
         width={width ?? 800}
         height={height ?? 600}
         priority={priority}
+        loading={loading ?? (priority ? "eager" : "lazy")}
         className={cn("h-auto w-full object-cover", className)}
         style={style}
       />

@@ -22,6 +22,7 @@ export interface ImageWithHotspotsProps {
   mobileImage?: string;
   mobileImageAlt?: string;
   hotspots: HotspotItem[];
+  headingTag?: "h1" | "h2" | "h3";
   centerText?: boolean;
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
@@ -52,6 +53,7 @@ export function ImageWithHotspots({
   mobileImage,
   mobileImageAlt = "",
   hotspots,
+  headingTag: HeadingTag = "h2",
   centerText = true,
   colorType = "default",
   backgroundColor,
@@ -90,7 +92,7 @@ export function ImageWithHotspots({
             </p>
           )}
           {heading && (
-            <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+            <HeadingTag className="text-2xl font-bold md:text-3xl">{heading}</HeadingTag>
           )}
         </div>
       )}

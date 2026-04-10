@@ -12,6 +12,7 @@ export default async function HorariosPartidosPage({
   return (
     <>
       <HorizontalScrollingBanners
+        headingTag="h1"
         blocks={[
           {
             type: "text",

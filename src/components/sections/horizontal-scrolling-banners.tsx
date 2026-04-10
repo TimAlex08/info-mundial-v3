@@ -65,6 +65,7 @@ export type HorizontalScrollBlock = MediaBlock | TextBlock | MediaWithTextBlock;
 
 export interface HorizontalScrollingBannersProps {
   blocks: HorizontalScrollBlock[];
+  headingTag?: "h1" | "h2" | "h3";
   id?: string;
   className?: string;
 }
@@ -82,6 +83,7 @@ function BlockContent({
   narrowContent = false,
   verticalAlign = "center",
   horizontalAlign = "center",
+  headingTag: HeadingTag = "h2",
 }: {
   number?: string;
   subheading?: string;
@@ -95,6 +97,7 @@ function BlockContent({
   narrowContent?: boolean;
   verticalAlign?: "start" | "center" | "end";
   horizontalAlign?: "left" | "center" | "right";
+  headingTag?: "h1" | "h2" | "h3";
 }) {
   return (
     <div
@@ -119,7 +122,7 @@ function BlockContent({
         </p>
       )}
       {heading && (
-        <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+        <HeadingTag className="text-2xl font-bold md:text-3xl">{heading}</HeadingTag>
       )}
       {text && (
         <div
@@ -141,9 +144,13 @@ function BlockContent({
 
 export function HorizontalScrollingBanners({
   blocks,
+  headingTag,
   id,
   className,
 }: HorizontalScrollingBannersProps) {
+  const firstHeadingIdx = headingTag
+    ? blocks.findIndex((b) => b.type !== "media" && "heading" in b && b.heading)
+    : -1;
   const wrapperRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [extraHeight, setExtraHeight] = useState(0);
@@ -214,6 +221,7 @@ export function HorizontalScrollingBanners({
                       loop
                       muted
                       playsInline
+                      preload="none"
                       className="h-full w-full object-cover"
                     >
                       <source src={block.videoSrc} type="video/mp4" />
@@ -263,6 +271,7 @@ export function HorizontalScrollingBanners({
                     narrowContent={block.narrowContent}
                     verticalAlign={block.verticalAlign}
                     horizontalAlign={block.horizontalAlign}
+                    headingTag={i === firstHeadingIdx ? headingTag : undefined}
                   />
                 </div>
               );
@@ -297,6 +306,7 @@ export function HorizontalScrollingBanners({
                         loop
                         muted
                         playsInline
+                        preload="none"
                         className="absolute inset-0 h-full w-full object-cover"
                       >
                         <source src={block.videoSrc} type="video/mp4" />
@@ -333,6 +343,7 @@ export function HorizontalScrollingBanners({
                         narrowContent={block.narrowContent}
                         verticalAlign={block.verticalAlign}
                         horizontalAlign={block.horizontalAlign}
+                        headingTag={i === firstHeadingIdx ? headingTag : undefined}
                       />
                     </div>
                   </div>
@@ -365,6 +376,7 @@ export function HorizontalScrollingBanners({
                         narrowContent={block.narrowContent}
                         verticalAlign={block.verticalAlign}
                         horizontalAlign={block.horizontalAlign}
+                        headingTag={i === firstHeadingIdx ? headingTag : undefined}
                       />
                     </div>
                   )}
@@ -404,6 +416,7 @@ export function HorizontalScrollingBanners({
                         narrowContent={block.narrowContent}
                         verticalAlign={block.verticalAlign}
                         horizontalAlign={block.horizontalAlign}
+                        headingTag={i === firstHeadingIdx ? headingTag : undefined}
                       />
                     </div>
                   )}

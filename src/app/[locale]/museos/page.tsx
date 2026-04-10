@@ -19,7 +19,7 @@ export default async function MuseosPage({
         textColor="#ffffff"
         blocks={[
           { type: "subheading", text: "La Ruta de los Museos:" },
-          { type: "heading", text: "Un Respiro Regio entre Partidos" },
+          { type: "heading", text: "Un Respiro Regio entre Partidos", tag: "h1" },
           { type: "text", content: "<p>Cuando vienes a Monterrey, el fútbol es la estrella, pero hay que saber tomarse un respiro. Como tu guía experto, te digo que la mejor forma de hacerlo es sumergirte en nuestro circuito cultural, que está convenientemente concentrado en la <strong>Macroplaza</strong> y sus alrededores. La ventaja estratégica aquí es que puedes hacer esta ruta completamente a pie si te alojas en el Centro, sin tener que lidiar con el tráfico.</p>" },
           { type: "line" },
           { type: "text", content: "<p><strong>El Triángulo Dorado del Arte y la Historia</strong></p><p>Olvídate de taxis; aquí están los tres grandes que te van a fascinar:</p>" },

@@ -359,6 +359,12 @@
     margin: 0 auto;
   }
 
+  /* === Performance: skip rendering for off-screen sections === */
+  section:not(:first-child) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
   /* === Section padding utilities === */
   .section-padding--spacious {
     padding-inline: 48px;

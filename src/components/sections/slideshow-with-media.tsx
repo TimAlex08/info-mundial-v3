@@ -156,6 +156,7 @@ export function SlideshowWithMedia({
                 loop
                 muted
                 playsInline
+                preload={i === 0 ? "metadata" : "none"}
                 className="absolute inset-0 h-full w-full object-cover"
               >
                 <source src={slide.videoSrc} type="video/mp4" />

@@ -27,7 +27,7 @@ export default async function MundialitoBarriosPage({
         desktopPaddingTop={32}
         desktopPaddingBottom={-28}
         blocks={[
-          { type: "heading", text: "Iª Edición del Mundialito Torneo de Barrios" },
+          { type: "heading", text: "Iª Edición del Mundialito Torneo de Barrios", tag: "h1" },
           { type: "text", content: "<p>Se llevará a cabo en las canchas del Municipio de Monterrey, del 15 de abril al 6 de junio del 2026.</p>" },
           { type: "button", label: "IR AL REGISTRO OFICIAL", style: "solid" },
         ]}

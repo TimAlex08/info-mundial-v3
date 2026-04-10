@@ -31,6 +31,7 @@ export interface FeaturedBlogProps {
   colorType?: "default" | "invert" | "custom";
   backgroundColor?: string;
   textColor?: string;
+  headingTag?: "h1" | "h2" | "h3";
   sectionWidth?: "wide" | "narrow";
   desktopPaddingTop?: number;
   desktopPaddingBottom?: number;
@@ -59,6 +60,7 @@ export function FeaturedBlog({
   imageRatio = "original",
   buttonLabel,
   buttonLink,
+  headingTag: HeadingTag = "h2",
   buttonStyle = "solid",
   colorType = "default",
   backgroundColor,
@@ -96,7 +98,7 @@ export function FeaturedBlog({
             </p>
           )}
           {heading && (
-            <h2 className="text-2xl font-bold md:text-3xl">{heading}</h2>
+            <HeadingTag className="text-2xl font-bold md:text-3xl">{heading}</HeadingTag>
           )}
         </div>
       )}

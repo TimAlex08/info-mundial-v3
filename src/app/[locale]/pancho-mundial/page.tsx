@@ -25,7 +25,7 @@ export default async function PanchoMundialPage({
         colorType="invert"
         blocks={[
           { type: "subheading", text: "El Regreso de la Leyenda" },
-          { type: "heading", text: "¿Quién es Pancho Mundial?" },
+          { type: "heading", text: "¿Quién es Pancho Mundial?", tag: "h1" },
           { type: "text", content: "<p>La Leyenda Detrás del Micrófono</p>" },
           { type: "button", label: "Canal YouTube", style: "solid" },
         ]}

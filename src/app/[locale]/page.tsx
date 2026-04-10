@@ -1,10 +1,58 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/constants";
 import { VideoBanner } from "@/components/sections/video-banner";
 import { ImageWithHotspots } from "@/components/sections/image-with-hotspots";
 import { Multicolumn } from "@/components/sections/multicolumn";
 import { HorizontalScrollingBanners } from "@/components/sections/horizontal-scrolling-banners";
 import { MediaWithTabs } from "@/components/sections/media-with-tabs";
 import { SlideshowWithMedia } from "@/components/sections/slideshow-with-media";
+
+const pageMeta: Record<string, { title: string; description: string }> = {
+  es: {
+    title: "Inicio",
+    description: SITE_DESCRIPTION,
+  },
+  en: {
+    title: "Home",
+    description:
+      "Official portal of Monterrey as a FIFA 2026 World Cup host city. Discover matches, stadium, transport, culture, food, and everything you need to know.",
+  },
+  fr: {
+    title: "Accueil",
+    description:
+      "Portail officiel de Monterrey, ville h\u00f4te de la Coupe du Monde FIFA 2026\u2122. D\u00e9couvrez les matchs, le stade, les transports, la culture et la gastronomie.",
+  },
+  de: {
+    title: "Startseite",
+    description:
+      "Offizielles Portal von Monterrey als Austragungsort der FIFA WM 2026\u2122. Entdecken Sie Spiele, Stadion, Transport, Kultur und Gastronomie.",
+  },
+  it: {
+    title: "Home",
+    description:
+      "Portale ufficiale di Monterrey come citt\u00e0 ospitante della Coppa del Mondo FIFA 2026\u2122. Scopri partite, stadio, trasporti, cultura e gastronomia.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const meta = pageMeta[locale] ?? pageMeta.es;
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    openGraph: {
+      title: `${meta.title} | ${SITE_NAME}`,
+      description: meta.description,
+      url: `${SITE_URL}/${locale}`,
+    },
+  };
+}
 
 export default async function HomePage({
   params,
@@ -14,12 +62,64 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: SITE_URL,
+        description: SITE_DESCRIPTION,
+        inLanguage: ["es", "en", "fr", "de", "it"],
+      },
+      {
+        "@type": "Organization",
+        name: "Gobierno de Monterrey",
+        url: SITE_URL,
+        logo: `${SITE_URL}/logos/logo-el-mundial-mty.png`,
+        sameAs: [
+          "https://www.instagram.com/mundialenmty/",
+          "https://www.tiktok.com/@mundialenmty",
+          "https://www.facebook.com/profile.php?id=61581262591303",
+          "https://www.youtube.com/@MundialenMTY",
+        ],
+      },
+      {
+        "@type": "SportsEvent",
+        name: "FIFA World Cup 2026 - Monterrey",
+        startDate: "2026-06-11",
+        endDate: "2026-07-19",
+        location: {
+          "@type": "StadiumOrArena",
+          name: "Estadio BBVA",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Guadalupe",
+            addressRegion: "Nuevo León",
+            addressCountry: "MX",
+          },
+        },
+        organizer: {
+          "@type": "Organization",
+          name: "FIFA",
+          url: "https://www.fifa.com",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero — Video Banner */}
       <VideoBanner
         id="home-hero"
         videoSrc="/videos/Video-1(1).mp4"
+        priority
         desktopHeight={80}
         mobileHeight={45}
         overlayColor="#000000"
@@ -43,6 +143,7 @@ export default async function HomePage({
       <ImageWithHotspots
         id="home-mapa"
         heading="VISITA MONTERREY"
+        headingTag="h1"
         desktopImage="/images/mapas/Mapa.jpg"
         desktopImageAlt="Mapa de Monterrey"
         mobileImage="/images/mapas/Mapa-C.jpg"

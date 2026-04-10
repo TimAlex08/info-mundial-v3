@@ -18,7 +18,7 @@ export default async function HistoriasPage({
         desktopPaddingTop={44}
         blocks={[
           { type: "subheading", text: "HISTORIAS CON ALMA REGIA" },
-          { type: "heading", text: "Tacos Doña Mary \"La Gritona\": La Autenticidad que Conquistó a Michelin" },
+          { type: "heading", text: "Tacos Doña Mary \"La Gritona\": La Autenticidad que Conquistó a Michelin", tag: "h1" },
           { type: "text", content: "<p>Ubicada en la zona centro (calle Capitán Aguilar), <strong>Tacos Doña Mary</strong> es una institución que trasciende lo gastronómico para convertirse en una experiencia antropológica. Doña Mary comenzó trabajando jornadas de <strong>20 horas diarias</strong>, durmiendo apenas cuatro, con el sueño de sacar adelante a su familia. Su apodo, \"La Gritona\", lejos de ser un reclamo, es su distintivo de eficiencia: ella grita las órdenes para que el flujo de la fila no se detenga.</p><p>Su esfuerzo fue recompensado en 2024 cuando la <strong>Guía Michelin</strong> le otorgó el reconocimiento <strong>Bib Gourmand</strong>. ¿El secreto? Tortillas de harina y maíz hechas a mano al momento y guisos que saben a hogar: <strong>barbacoa</strong>, chiles rellenos, albóndigas de papa y su famoso huevo en salsa. Doña Mary personifica la cultura del esfuerzo de Monterrey: una mujer que empezó en una barra en la calle y hoy es reconocida mundialmente por mantener el sabor intacto de la cocina del noreste.</p>" },
         ]}
       />
